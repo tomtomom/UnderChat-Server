@@ -5,8 +5,7 @@
 #-------------------------------------------------
 
 QT       += core
-
-QT       -= gui
+QT       += network
 
 TARGET = UnderChatServer
 CONFIG   += console
@@ -14,5 +13,8 @@ CONFIG   -= app_bundle
 
 TEMPLATE = app
 
+SOURCES += Main.cpp \
+    ucserver.cpp
 
-SOURCES += main.cpp
+HEADERS += \
+    ucserver.h
